@@ -84,5 +84,5 @@ C:\Users\ppanchal\source\repos\pushpk\EmployeeManagememt_Blazor_3.1.3\EmployeeMa
 C:\Users\ppanchal\source\repos\pushpk\EmployeeManagememt_Blazor_3.1.3\EmployeeManagement.Web\obj\Debug\netcoreapp3.1\staticwebassets\EmployeeManagement.Web.StaticWebAssets.xml
 C:\Users\ppanchal\source\repos\pushpk\EmployeeManagememt_Blazor_3.1.3\EmployeeManagement.Web\obj\Debug\netcoreapp3.1\EmployeeManagement.Web.dll
 C:\Users\ppanchal\source\repos\pushpk\EmployeeManagememt_Blazor_3.1.3\EmployeeManagement.Web\obj\Debug\netcoreapp3.1\EmployeeManagement.Web.pdb
-C:\Users\ppanchal\source\repos\pushpk\EmployeeManagememt_Blazor_3.1.3\EmployeeManagement.Web\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\EmployeeListrazor.razor.g.cs
-C:\Users\ppanchal\source\repos\pushpk\EmployeeManagememt_Blazor_3.1.3\EmployeeManagement.Web\obj\Debug\netcoreapp3.1\Razor\Pages\EmployeeListrazor.razor.g.cs
+C:\Users\ppanchal\source\repos\pushpk\EmployeeManagememt_Blazor_3.1.3\EmployeeManagement.Web\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\EmployeeList.razor.g.cs
+C:\Users\ppanchal\source\repos\pushpk\EmployeeManagememt_Blazor_3.1.3\EmployeeManagement.Web\obj\Debug\netcoreapp3.1\Razor\Pages\EmployeeList.razor.g.cs
