@@ -11,10 +11,10 @@ namespace EmployeeManagement.Web.Pages
     {
         public IEnumerable<Employee> Employees { get; set; }
 
-        protected override Task OnInitializedAsync()
+        protected override async Task OnInitializedAsync()
         {
-            LoadEmployees();
-            return base.OnInitializedAsync();
+           await Task.Run(LoadEmployees);
+            //return base.OnInitializedAsync();
         }
 
         private void LoadEmployees()

@@ -4,6 +4,12 @@
 
 <h3>EmployeeListrazor</h3>
 
+@if (Employees == null)
+{
+    <div class="spinner"></div>
+}
+else
+{
 <div class="card-deck">
     @foreach (var employee in Employees)
     {
@@ -27,6 +33,7 @@
 
     }
 </div>
+}
 
 @code {
 
