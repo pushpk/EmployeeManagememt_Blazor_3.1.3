@@ -1,5 +1,3 @@
-# EmployeeManagememt_Blazor_3.1.3
-
 ## Blazor Employee Managememt with Identity and Repository Pattern
 
 A project showcasing a blazor app using ef core with identity
