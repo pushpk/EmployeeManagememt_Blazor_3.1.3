@@ -54,14 +54,21 @@ namespace EmployeeManagement.API.Controllers
 
         // POST: api/Employees
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] Employee employee)
+        public async Task<ActionResult<Employee>> Post([FromBody] Employee employee)
         {
-            if(ModelState.IsValid)
-             {
                 try
                 {
+                var emp =  this.employeeRepository.GetEmployeeByEmail(employee.Email);
+
+                if(emp != null)
+                {
+                    ModelState.AddModelError("email", "Employee Email already exist");
+                    return BadRequest(ModelState);
+                }
+
                     Employee createdEmployee = await this.employeeRepository.AddEmployee(employee);
-                    CreatedAtAction(nameof(Get), new { employeeId = createdEmployee.EmployeeId });
+                    return CreatedAtAction(nameof(Get), new { employeeId = createdEmployee.EmployeeId });
+                    
                 }
                 catch (Exception ex)
                 {
@@ -69,24 +76,42 @@ namespace EmployeeManagement.API.Controllers
 
                 }
 
-            }
-            else
-            {
-                return StatusCode(StatusCodes.Status400BadRequest, "Required fields are missing");
-            }
         }
 
         // PUT: api/Employees/5
         [HttpPut("Edit/{id}")]
-        public void Put(int id, [FromBody] Employee editedEmployee)
+        public async Task<ActionResult<Employee>> Put(int id, [FromBody] Employee editedEmployee)
         {
-            this.employeeRepository.EditEmployee(id, editedEmployee);
+            if(id != editedEmployee.EmployeeId)
+            {
+                return BadRequest("Emp Id Mismatch");
+            }
+
+           return await this.employeeRepository.EditEmployee(id, editedEmployee);
+           
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult<Employee>> Delete(int id)
         {
-        }
+
+            try
+            {
+                var emp = this.employeeRepository.GetEmployee(id);
+
+                if (emp == null)
+                {
+                    return NotFound($"Employee {id} not found");
+                }
+                var deletedEmployee =  await employeeRepository.DeleteEmployee(id);
+                return deletedEmployee;
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message.ToString());
+
+            }
+         }
     }
 }

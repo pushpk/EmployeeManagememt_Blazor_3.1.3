@@ -25,7 +25,7 @@ namespace EmployeeManagement.API.Repositories
            
         }
 
-        public async Task<bool> DeleteEmployee(int employeeId)
+        public async Task<Employee> DeleteEmployee(int employeeId)
         {
             var employee = await _dbContext.Employees.FirstOrDefaultAsync(s => s.EmployeeId == employeeId);
             _dbContext.Remove(employee);
@@ -33,21 +33,25 @@ namespace EmployeeManagement.API.Repositories
             try
             {
                 await _dbContext.SaveChangesAsync();
-                return true;
+                return employee;
             }
             catch (Exception)
             {
 
-                return false;
+                return null;
             }
 
 
         }
 
-        public void EditEmployee(int id, Employee employee)
+        public async Task<Employee> EditEmployee(int id, Employee employee)
         {
-            //var emp = this._dbContext.Employees.FirstOrDefault(s => s.EmployeeId == employee.EmployeeId);
-
+            var result = await _dbContext.Employees.FirstOrDefaultAsync(s => s.EmployeeId == id);
+           
+            _dbContext.Entry(employee).State = EntityState.Modified;
+            _dbContext.SaveChanges();
+           
+            return result;
 
 
 
@@ -57,6 +61,13 @@ namespace EmployeeManagement.API.Repositories
         {
             var result = await _dbContext.Employees.FirstOrDefaultAsync(s => s.EmployeeId == employeeId);
             return result;
+        }
+
+        public  async Task<Employee> GetEmployeeByEmail(string employeeEmail)
+        {
+            var result = await _dbContext.Employees.FirstOrDefaultAsync(s => s.Email == employeeEmail);
+            return result;
+
         }
 
         public async Task<IEnumerable<Employee>> GetEmployees()
