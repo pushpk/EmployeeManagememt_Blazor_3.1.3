@@ -22,31 +22,65 @@ namespace EmployeeManagement.API.Controllers
         }
         // GET: api/Employees
         [HttpGet]
-        public async Task<IEnumerable<Employee>> Get()
+        public async Task<ActionResult> Get()
         {
-            return await this.employeeRepository.GetEmployees();
+            try
+            {
+                return Ok(await this.employeeRepository.GetEmployees());
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message.ToString());
+
+            }
            
         }
 
         // GET: api/Employees/5
         [HttpGet("{id}", Name = "Get")]
-        public async Task<Employee> Get(int employeeId)
+        public async Task<ActionResult> Get(int employeeId)
         {
-            return await this.employeeRepository.GetEmployee(employeeId);
+            try
+            {
+                return Ok(await this.employeeRepository.GetEmployee(employeeId));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message.ToString());
+
+            }
 
         }
 
         // POST: api/Employees
         [HttpPost]
-        public void Post([FromBody] Employee employee)
+        public async Task<ActionResult> Post([FromBody] Employee employee)
         {
-           
+            if(ModelState.IsValid)
+             {
+                try
+                {
+                    Employee createdEmployee = await this.employeeRepository.AddEmployee(employee);
+                    CreatedAtAction(nameof(Get), new { employeeId = createdEmployee.EmployeeId });
+                }
+                catch (Exception ex)
+                {
+                    return StatusCode(StatusCodes.Status500InternalServerError, ex.Message.ToString());
+
+                }
+
+            }
+            else
+            {
+                return StatusCode(StatusCodes.Status400BadRequest, "Required fields are missing");
+            }
         }
 
         // PUT: api/Employees/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("Edit/{id}")]
+        public void Put(int id, [FromBody] Employee editedEmployee)
         {
+            this.employeeRepository.EditEmployee(id, editedEmployee);
         }
 
         // DELETE: api/ApiWithActions/5

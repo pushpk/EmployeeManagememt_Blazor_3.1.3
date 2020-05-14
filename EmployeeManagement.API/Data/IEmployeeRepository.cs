@@ -11,10 +11,10 @@ namespace EmployeeManagement.API.Data
         Task<IEnumerable<Employee>> GetEmployees();
         Task<Employee> GetEmployee(int employeeId);
 
-        void AddEmployee(Employee employee);
+        Task<Employee> AddEmployee(Employee employee);
 
         Task<bool> DeleteEmployee(int employeeId);
-        void EditEmployee(Employee employee);
+        void EditEmployee(int id, Employee employee);
 
 
 

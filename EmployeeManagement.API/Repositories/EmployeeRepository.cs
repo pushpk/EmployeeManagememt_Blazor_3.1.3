@@ -16,17 +16,13 @@ namespace EmployeeManagement.API.Repositories
             this._dbContext = dbContext;
 
         }
-        public async void AddEmployee(Employee employee)
+        public async Task<Employee> AddEmployee(Employee employee)
         {
-            await _dbContext.AddAsync(employee);
-            try
-            {
+          var result =   await _dbContext.AddAsync(employee);
+           
                 await _dbContext.SaveChangesAsync();
-            }
-            catch (Exception)
-            {
-
-            }
+                return result.Entity;
+           
         }
 
         public async Task<bool> DeleteEmployee(int employeeId)
@@ -48,7 +44,7 @@ namespace EmployeeManagement.API.Repositories
 
         }
 
-        public void EditEmployee(Employee employee)
+        public void EditEmployee(int id, Employee employee)
         {
             //var emp = this._dbContext.Employees.FirstOrDefault(s => s.EmployeeId == employee.EmployeeId);
 
