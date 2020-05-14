@@ -3,3 +3,12 @@
 ################################################################################
 
 /.vs
+bin
+obj
+packages
+EmployeeManagement.Models/bin
+EmployeeManagement.Models/obj
+EmployeeManagement.Web/obj
+EmployeeManagement.Web/bin
+EmployeeManagement.API/bin
+EmployeeManagement.API/obj

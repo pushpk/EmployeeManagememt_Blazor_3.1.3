@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ppanchal\\source\\repos\\pushpk\\EmployeeManagememt_Blazor_3.1.3\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj": {}
+    "C:\\Users\\ppanchal\\source\\repos\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ppanchal\\source\\repos\\pushpk\\EmployeeManagememt_Blazor_3.1.3\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
+    "C:\\Users\\ppanchal\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ppanchal\\source\\repos\\pushpk\\EmployeeManagememt_Blazor_3.1.3\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+        "projectUniqueName": "C:\\Users\\ppanchal\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
         "projectName": "EmployeeManagement.Models",
-        "projectPath": "C:\\Users\\ppanchal\\source\\repos\\pushpk\\EmployeeManagememt_Blazor_3.1.3\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+        "projectPath": "C:\\Users\\ppanchal\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
         "packagesPath": "C:\\Users\\ppanchal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ppanchal\\source\\repos\\pushpk\\EmployeeManagememt_Blazor_3.1.3\\EmployeeManagement.Models\\obj\\",
+        "outputPath": "C:\\Users\\ppanchal\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -60,18 +60,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ppanchal\\source\\repos\\pushpk\\EmployeeManagememt_Blazor_3.1.3\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj": {
+    "C:\\Users\\ppanchal\\source\\repos\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ppanchal\\source\\repos\\pushpk\\EmployeeManagememt_Blazor_3.1.3\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj",
+        "projectUniqueName": "C:\\Users\\ppanchal\\source\\repos\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj",
         "projectName": "EmployeeManagement.Web",
-        "projectPath": "C:\\Users\\ppanchal\\source\\repos\\pushpk\\EmployeeManagememt_Blazor_3.1.3\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj",
+        "projectPath": "C:\\Users\\ppanchal\\source\\repos\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj",
         "packagesPath": "C:\\Users\\ppanchal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ppanchal\\source\\repos\\pushpk\\EmployeeManagememt_Blazor_3.1.3\\EmployeeManagement.Web\\obj\\",
+        "outputPath": "C:\\Users\\ppanchal\\source\\repos\\EmployeeManagement\\EmployeeManagement.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -92,8 +92,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ppanchal\\source\\repos\\pushpk\\EmployeeManagememt_Blazor_3.1.3\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
-                "projectPath": "C:\\Users\\ppanchal\\source\\repos\\pushpk\\EmployeeManagememt_Blazor_3.1.3\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj"
+              "C:\\Users\\ppanchal\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
+                "projectPath": "C:\\Users\\ppanchal\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj"
               }
             }
           }
@@ -124,7 +124,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

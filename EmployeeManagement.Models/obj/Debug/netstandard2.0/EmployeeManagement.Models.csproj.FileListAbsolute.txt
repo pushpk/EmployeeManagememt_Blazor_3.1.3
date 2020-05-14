@@ -1,11 +1,3 @@
-C:\Users\ppanchal\source\repos\EmployeeManagement\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.deps.json
-C:\Users\ppanchal\source\repos\EmployeeManagement\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.dll
-C:\Users\ppanchal\source\repos\EmployeeManagement\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.pdb
-C:\Users\ppanchal\source\repos\EmployeeManagement\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.csprojAssemblyReference.cache
-C:\Users\ppanchal\source\repos\EmployeeManagement\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.AssemblyInfoInputs.cache
-C:\Users\ppanchal\source\repos\EmployeeManagement\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.AssemblyInfo.cs
-C:\Users\ppanchal\source\repos\EmployeeManagement\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.dll
-C:\Users\ppanchal\source\repos\EmployeeManagement\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.pdb
 C:\Users\ppanchal\source\repos\pushpk\EmployeeManagememt_Blazor_3.1.3\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.deps.json
 C:\Users\ppanchal\source\repos\pushpk\EmployeeManagememt_Blazor_3.1.3\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.dll
 C:\Users\ppanchal\source\repos\pushpk\EmployeeManagememt_Blazor_3.1.3\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.pdb
