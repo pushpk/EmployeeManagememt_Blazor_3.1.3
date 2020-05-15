@@ -37,12 +37,12 @@ namespace EmployeeManagement.API.Controllers
         }
 
         // GET: api/Employees/5
-        [HttpGet("{id}", Name = "Get")]
-        public async Task<ActionResult> Get(int employeeId)
+        [HttpGet("{Id}", Name = "Get")]
+        public async Task<ActionResult> Get(int Id)
         {
             try
             {
-                return Ok(await this.employeeRepository.GetEmployee(employeeId));
+                return Ok(await this.employeeRepository.GetEmployee(Id));
             }
             catch (Exception ex)
             {
